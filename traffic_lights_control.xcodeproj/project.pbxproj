@@ -13,11 +13,9 @@
 		23E67F6B1BA8166A0049D43E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E67F6A1BA8166A0049D43E /* Images.xcassets */; };
 		23E67F6E1BA8166A0049D43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E67F6C1BA8166A0049D43E /* Main.storyboard */; };
 		23E67F7A1BA8166A0049D43E /* UI_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E67F791BA8166A0049D43E /* UI_exampleTests.m */; };
-		23E67F841BA818090049D43E /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E67F831BA818090049D43E /* View.xib */; };
 		23E67F861BA9997B0049D43E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E67F851BA9997B0049D43E /* IOKit.framework */; };
 		23E67F881BA999820049D43E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E67F871BA999820049D43E /* CoreFoundation.framework */; };
 		23E67F8A1BA9999C0049D43E /* hid.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E67F891BA9999C0049D43E /* hid.o */; };
-		23E67F8C1BA999AC0049D43E /* hidapi.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E67F8B1BA999AC0049D43E /* hidapi.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +41,6 @@
 		23E67F731BA8166A0049D43E /* traffic_lights_control.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = traffic_lights_control.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E67F781BA8166A0049D43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23E67F791BA8166A0049D43E /* UI_exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI_exampleTests.m; sourceTree = "<group>"; };
-		23E67F831BA818090049D43E /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View.xib; path = UI_exampleTests/View.xib; sourceTree = SOURCE_ROOT; };
 		23E67F851BA9997B0049D43E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		23E67F871BA999820049D43E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		23E67F891BA9999C0049D43E /* hid.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = hid.o; path = ../hidapi/mac/hid.o; sourceTree = "<group>"; };
@@ -55,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23E67F8C1BA999AC0049D43E /* hidapi.h in Frameworks */,
 				23E67F8A1BA9999C0049D43E /* hid.o in Frameworks */,
 				23E67F881BA999820049D43E /* CoreFoundation.framework in Frameworks */,
 				23E67F861BA9997B0049D43E /* IOKit.framework in Frameworks */,
@@ -79,8 +75,8 @@
 				23E67F891BA9999C0049D43E /* hid.o */,
 				23E67F871BA999820049D43E /* CoreFoundation.framework */,
 				23E67F851BA9997B0049D43E /* IOKit.framework */,
-				23E67F5F1BA8166A0049D43E /* UI_example */,
-				23E67F761BA8166A0049D43E /* UI_exampleTests */,
+				23E67F5F1BA8166A0049D43E /* traffic_lights_control */,
+				23E67F761BA8166A0049D43E /* traffic_lights_control_tests */,
 				23E67F5E1BA8166A0049D43E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +90,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		23E67F5F1BA8166A0049D43E /* UI_example */ = {
+		23E67F5F1BA8166A0049D43E /* traffic_lights_control */ = {
 			isa = PBXGroup;
 			children = (
 				23E67F621BA8166A0049D43E /* AppDelegate.h */,
@@ -103,10 +99,9 @@
 				23E67F681BA8166A0049D43E /* ViewController.m */,
 				23E67F6A1BA8166A0049D43E /* Images.xcassets */,
 				23E67F6C1BA8166A0049D43E /* Main.storyboard */,
-				23E67F831BA818090049D43E /* View.xib */,
 				23E67F601BA8166A0049D43E /* Supporting Files */,
 			);
-			path = UI_example;
+			path = traffic_lights_control;
 			sourceTree = "<group>";
 		};
 		23E67F601BA8166A0049D43E /* Supporting Files */ = {
@@ -118,13 +113,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		23E67F761BA8166A0049D43E /* UI_exampleTests */ = {
+		23E67F761BA8166A0049D43E /* traffic_lights_control_tests */ = {
 			isa = PBXGroup;
 			children = (
 				23E67F791BA8166A0049D43E /* UI_exampleTests.m */,
 				23E67F771BA8166A0049D43E /* Supporting Files */,
 			);
-			path = UI_exampleTests;
+			path = traffic_lights_control_tests;
 			sourceTree = "<group>";
 		};
 		23E67F771BA8166A0049D43E /* Supporting Files */ = {
@@ -179,7 +174,7 @@
 		23E67F551BA8166A0049D43E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Hristo Borisov";
 				TargetAttributes = {
 					23E67F5C1BA8166A0049D43E = {
@@ -224,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23E67F841BA818090049D43E /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +286,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -355,8 +350,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = UI_example/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/traffic_lights_control/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = traffic_lights_control;
 			};
 			name = Debug;
@@ -366,8 +362,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = UI_example/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/traffic_lights_control/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = traffic_lights_control;
 			};
 			name = Release;
@@ -387,6 +384,7 @@
 				);
 				INFOPLIST_FILE = UI_exampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = traffic_lights_control;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/traffic_lights_control.app/Contents/MacOS/traffic_lights_control";
 			};
@@ -403,6 +401,7 @@
 				);
 				INFOPLIST_FILE = UI_exampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = traffic_lights_control;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/traffic_lights_control.app/Contents/MacOS/traffic_lights_control";
 			};
