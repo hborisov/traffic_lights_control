@@ -87,31 +87,7 @@ int i;
         
 
     }
-        //    unsigned char command = 0x30;
-    //buf[0] = 0x61;
     
-    //hid_write(handle, buf, 65);
-    /*
-     
-     // Send an Output report to toggle the LED (cmd 0x80)
-     buf[0] = 1; // First byte is report number
-     buf[1] = 0x80;
-     res = hid_write(handle, buf, 65);
-     
-     // Send an Output report to request the state (cmd 0x81)
-     buf[1] = 0x81;
-     hid_write(handle, buf, 65);
-     
-     // Read requested state
-     res = hid_read(handle, buf, 65);
-     if (res < 0)
-     printf("Unable to read()\n");
-     
-     // Print out the returned buffer.
-     for (i = 0; i < res; i++)
-     printf("buf[%d]: %d\n", i, buf[i]);
-     */
-
     // Do any additional setup after loading the view.
 }
 
@@ -119,6 +95,59 @@ int i;
     [super setRepresentedObject:representedObject];
 
     // Update the view, if already loaded.
+}
+
+- (IBAction)Test: (id)sender {
+    for (int i=0; i<3; i++) {
+        buf[0] = 0x80;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x70;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x60;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x50;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x40;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x30;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x31;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x41;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x51;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x61;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x71;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+        
+        buf[0] = 0x81;
+        hid_write(handle, buf, 65);
+        usleep(500000);
+    }
+    
 }
 
 - (IBAction)click:(id)sender {

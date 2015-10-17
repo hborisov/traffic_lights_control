@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23759F6C1BB80B2A00E9A924 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23759F6B1BB80B2A00E9A924 /* MenuController.m */; settings = {ASSET_TAGS = (); }; };
 		23E67F641BA8166A0049D43E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E67F631BA8166A0049D43E /* AppDelegate.m */; };
 		23E67F661BA8166A0049D43E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E67F651BA8166A0049D43E /* main.m */; };
 		23E67F691BA8166A0049D43E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E67F681BA8166A0049D43E /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23759F6A1BB80B2A00E9A924 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		23759F6B1BB80B2A00E9A924 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		23E67F5D1BA8166A0049D43E /* traffic_lights_control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traffic_lights_control.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E67F611BA8166A0049D43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23E67F621BA8166A0049D43E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				23E67F681BA8166A0049D43E /* ViewController.m */,
 				23E67F6A1BA8166A0049D43E /* Images.xcassets */,
 				23E67F6C1BA8166A0049D43E /* Main.storyboard */,
+				23759F6A1BB80B2A00E9A924 /* MenuController.h */,
+				23759F6B1BB80B2A00E9A924 /* MenuController.m */,
 				23E67F601BA8166A0049D43E /* Supporting Files */,
 			);
 			path = traffic_lights_control;
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23759F6C1BB80B2A00E9A924 /* MenuController.m in Sources */,
 				23E67F691BA8166A0049D43E /* ViewController.m in Sources */,
 				23E67F661BA8166A0049D43E /* main.m in Sources */,
 				23E67F641BA8166A0049D43E /* AppDelegate.m in Sources */,
